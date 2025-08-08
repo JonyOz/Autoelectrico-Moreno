@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.hero {
+  position: relative;
+  height: 60vh;
+  background: url('img/hero.jpeg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.servicios {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: #f1f1f1;
+}
+
+.contacto {
+  padding: 3rem 1rem;
+  background-color: #e5e5e5;
+  text-align: center;
+}
+
+.mapa-horario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.mapa-horario iframe {
+  width: 400px;
+  height: 300px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.horario {
+  text-align: left;
+  max-width: 300px;
+}
+
+.horario h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.horario p {
+  font-size: 1.2rem;
+  color: #222;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.mapa-con-info {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.mapa-con-info iframe {
+  flex: 1 1 60%;
+  border-radius: 10px;
+}
+
+.info-contacto {
+  flex: 1 1 35%;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.info-contacto h3 {
+  margin-bottom: 15px;
+}
+
+.info-contacto p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.info-contacto a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Íconos flotantes */
+.whatsapp-float, .facebook-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+}
+
+.facebook-float {
+  bottom: 80px; /* Se posiciona arriba del WhatsApp */
+}
+
+.whatsapp-float img,
+.facebook-float img {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img:hover,
+.facebook-float img:hover {
+  transform: scale(1.1);
+}
